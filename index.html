@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <header>
+            <h1 id="calendar-title">Calendário 2024</h1>
+            <button id="prev-month">&lt;</button>
+            <button id="next-month">&gt;</button>
+        </header>
+        <div id="calendar-body"></div>
+    </div>
+    <div id="reminder-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Adicionar Lembrete</h2>
+            <input type="hidden" id="selected-date">
+            <textarea id="reminder-text" placeholder="Digite seu lembrete aqui..."></textarea>
+            <button id="save-reminder">Salvar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #f73c3c;
+    margin: 100px;
+    padding: 50px;
+    background: url(assets/pedro.jpg);
+}
+
+.calendar {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-title {
+    font-size: 29px;
+    margin: 0;
+  
+}
+
+button {
+    background: #d61515;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+#calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.day-header {
+    background: #f1f1f1;
+    font-weight: bold;
+}
+
+.holiday {
+    background: #264fc0;
+    font-weight: bold;
+}
+
+.reminder {
+    background: #d1ffd1;
+    border: 1px solid #a1eaa1;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    word-wrap: break-word;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+button#save-reminder {
+    background: #28a745;
+}
+
+button#save-reminder:hover {
+    background: #218838;
+}
